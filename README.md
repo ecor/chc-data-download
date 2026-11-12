@@ -305,6 +305,14 @@ it only contacts the server on the days new files are usually published
 following month), so it does not repeatedly request files that do not exist
 yet.
 
+[`examples/download_chirps_daily_rnl_netcdf.sh`](examples/download_chirps_daily_rnl_netcdf.sh)
+mirrors the CHIRPS v3 daily `rnl` NetCDF files from 1981 to the present, with
+a mode for the full archive and one for cron updates. Step-by-step guide:
+[English](docs/chirps-daily-rnl-netcdf/README.md),
+[Italiano](docs/chirps-daily-rnl-netcdf/README.it.md),
+[Español](docs/chirps-daily-rnl-netcdf/README.es.md),
+[Français](docs/chirps-daily-rnl-netcdf/README.fr.md).
+
 ## Safety And Operations
 
 - `--dry-run` builds and prints the plan without downloading artifacts. It still
