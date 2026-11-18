@@ -313,6 +313,19 @@ a mode for the full archive and one for cron updates. Step-by-step guide:
 [Español](docs/chirps-daily-rnl-netcdf/README.es.md),
 [Français](docs/chirps-daily-rnl-netcdf/README.fr.md).
 
+[`examples/download_chirps_monthly.sh`](examples/download_chirps_monthly.sh)
+mirrors the official CHIRPS v3 final monthly totals from 1981 to the present,
+as one GeoTIFF per month (default) or, with `FORMAT=netcdf`, one NetCDF per
+year. Like the daily script, it has a mode for the full archive (optionally
+limited to a range of years, for example `all 1981 1994`) and one for cron
+updates:
+
+```bash
+bash examples/download_chirps_monthly.sh all --dry-run
+bash examples/download_chirps_monthly.sh all
+bash examples/download_chirps_monthly.sh update
+```
+
 ## Safety And Operations
 
 - `--dry-run` builds and prints the plan without downloading artifacts. It still
